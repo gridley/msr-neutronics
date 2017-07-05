@@ -16,18 +16,18 @@ def getLowerUpperSab(temp):
     if temp < 600.:
         raise Exception('temp not implemented. ask gavin')
 
-    temps = [600.,700.,800.,1000.,1200.,1600.,2000.]
+    temps =   [600.,  700., 800., 1000.,1200.,1600.,2000.]
     libnames =['12t','16t','18t','20t','22t','24t','26t']
     for j, (templib, lib) in enumerate(zip(temps, libnames)):
 
         if templib == temp:
-            return baselib+'.'+lib,''
+            return baselib+'.'+lib,' '+baselib+'.'+lib
 
-        elif templib <= temp:
-            return baselib+'.'+lib+' ',baselib+'.'+libnames[j+1]+''
+        elif templib >= temp:
+            return baselib+'.'+libnames[j-1]+' ',baselib+'.'+libnames[j]+''
 
     else:
-        raise Exception("Temperature {} not implemented.".format(temp))
+        raise NotImplementedError("Temperature {} not implemented.".format(temp))
 
 # print fuel branches
 i=0
@@ -39,7 +39,7 @@ for temp in temps:
 i=0
 for temp in temps:
     therm1, therm2 = getLowerUpperSab(temp)
-    print ('branch moder{} stp moder {} {} {} {}'.format(i, modRho(temp), temp, therm1, therm2))
+    print ('branch moder{} stp moder {} {} grmod {} {}'.format(i, modRho(temp), temp, therm1, therm2))
     i += 1
 
 # now, also control rod positions are needed.
@@ -51,7 +51,7 @@ for i,pos in enumerate(CR1positions):
     nrod +=1
 
 # lastly, the coefficient matrix definition is needed.
-print('% --- REST IN PEACE, CPUs ---')
+print('% --- RIP in peace, CPUs ---')
 print('\n\ncoef 1')
 print('0')
 print('{}  '.format(len(temps)) + ''.join(['fuel{} '.format(j) for j in  range(len(temps))]))

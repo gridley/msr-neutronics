@@ -198,26 +198,35 @@ branch fuel11 stp fuel -1.819130144414831 1700.0
 branch fuel12 stp fuel -1.7808992693123449 1800.0
 branch fuel13 stp fuel -1.7434718550373258 1900.0
 branch fuel14 stp fuel -1.7068310160411293 2000.0
-branch moder0 stp moder -1.8697009302433254 633.0 gre7.12t  gre7.16t
-branch moder1 stp moder -1.8674474300551962 700.0 gre7.12t  gre7.16t
-branch moder2 stp moder -1.864089048131591 800.0 gre7.12t  gre7.16t
-branch moder3 stp moder -1.860736705858133 900.0 gre7.12t  gre7.16t
-branch moder4 stp moder -1.8573903923732291 1000.0 gre7.12t  gre7.16t
-branch moder5 stp moder -1.8540500968348215 1100.0 gre7.12t  gre7.16t
-branch moder6 stp moder -1.8507158084203499 1200.0 gre7.12t  gre7.16t
-branch moder7 stp moder -1.8473875163267162 1300.0 gre7.12t  gre7.16t
-branch moder8 stp moder -1.8440652097702517 1400.0 gre7.12t  gre7.16t
-branch moder9 stp moder -1.8407488779866799 1500.0 gre7.12t  gre7.16t
-branch moder10 stp moder -1.8374385102310833 1600.0 gre7.12t  gre7.16t
-branch moder11 stp moder -1.8341340957778671 1700.0 gre7.12t  gre7.16t
-branch moder12 stp moder -1.8308356239207257 1800.0 gre7.12t  gre7.16t
-branch moder13 stp moder -1.8275430839726075 1900.0 gre7.12t  gre7.16t
-branch moder14 stp moder -1.8242564652656799 2000.0 gre7.12t  gre7.16t
-branch rod0 tra CR1 208.0
-branch rod1 tra CR1 161.90550000000002
-branch rod2 tra CR1 115.811
-branch rod3 tra CR1 69.7165
-branch rod4 tra CR1 23.622
+trans u TR1 5.08 5.08 208.0
+trans u TR2 5.08 5.08 161.9055
+trans u TR3 5.08 5.08 115.811
+trans u TR4 5.08 5.08 69.7165
+trans u TR5 5.08 5.08 23.622
+
+% ----REST IN PEACE, CPUs ------------
+branch moder0 stp moder -1.8697009302433254 633.0 grmod gre7.12t  gre7.16t
+branch moder1 stp moder -1.8674474300551962 700.0 grmod gre7.16t  gre7.16t
+branch moder2 stp moder -1.864089048131591 800.0 grmod gre7.18t  gre7.18t
+branch moder3 stp moder -1.860736705858133 900.0 grmod gre7.18t  gre7.20t
+branch moder4 stp moder -1.8573903923732291 1000.0 grmod gre7.20t  gre7.20t
+branch moder5 stp moder -1.8540500968348215 1100.0 grmod gre7.20t  gre7.22t
+branch moder6 stp moder -1.8507158084203499 1200.0 grmod gre7.22t  gre7.22t
+branch moder7 stp moder -1.8473875163267162 1300.0 grmod gre7.22t  gre7.24t
+branch moder8 stp moder -1.8440652097702517 1400.0 grmod gre7.22t  gre7.24t
+branch moder9 stp moder -1.8407488779866799 1500.0 grmod gre7.22t  gre7.24t
+branch moder10 stp moder -1.8374385102310833 1600.0 grmod gre7.24t  gre7.24t
+branch moder11 stp moder -1.8341340957778671 1700.0 grmod gre7.24t  gre7.26t
+branch moder12 stp moder -1.8308356239207257 1800.0 grmod gre7.24t  gre7.26t
+branch moder13 stp moder -1.8275430839726075 1900.0 grmod gre7.24t  gre7.26t
+branch moder14 stp moder -1.8242564652656799 2000.0 grmod gre7.26t  gre7.26t
+branch rod0 tra CR1 TR1
+branch rod1 tra CR1 TR2
+branch rod2 tra CR1 TR3
+branch rod3 tra CR1 TR4
+branch rod4 tra CR1 TR5 
+
+
 
 coef 1
 0

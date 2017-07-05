@@ -1,0 +1,4 @@
+Error connecting to agent: No such file or directory
+[node19][[6953,1],2][btl_tcp_frag.c:237:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
+[node14][[6953,1],1][btl_tcp_frag.c:237:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
+[node47][[6953,1],4][btl_tcp_frag.c:237:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)

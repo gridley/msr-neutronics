@@ -1,0 +1,7 @@
+Error connecting to agent: No such file or directory
+[node7][[41144,1],5][btl_tcp_endpoint.c:618:mca_btl_tcp_endpoint_recv_blocking] recv(17, 0/8) failed: Connection reset by peer (104)
+[node4][[41144,1],8][btl_tcp_endpoint.c:618:mca_btl_tcp_endpoint_recv_blocking] [node7:02820] pml_ob1_sendreq.c:188 FATAL
+[node5][[41144,1],7][btl_tcp_endpoint.c:618:mca_btl_tcp_endpoint_recv_blocking] recv(16, 0/8) failed: Connection reset by peer (104)
+recv(13, 0/8) failed: Connection reset by peer (104)[node5:11789] pml_ob1_sendreq.c:188 FATAL
+
+[node4:11569] pml_ob1_sendreq.c:188 FATAL

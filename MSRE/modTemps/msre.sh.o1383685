@@ -1,0 +1,60 @@
+
+  _                   .-=-.           .-=-.          .-==-.       
+ { }      __        .' O o '.       .' O o '.       /  -<' )--<   
+ { }    .' O'.     / o .-. O \     / o .-. O \     /  .---`       
+ { }   / .-. o\   /O  /   \  o\   /O  /   \  o\   /O /            
+  \ `-` /   \ O`-'o  /     \  O`-'o  /     \  O`-`o /             
+   `-.-`     '.____.'       `._____.'       `.____.'              
+
+Serpent 2 beta
+
+A Continuous-energy Monte Carlo Reactor Physics Burnup Calculation Code
+
+ - Version 2.1.29 (June 12, 2017) -- Contact: serpent@vtt.fi
+
+ - Reference: J. Leppanen, et al. "The Serpent Monte Carlo code: Status,
+              development and applications in 2013." Ann. Nucl. Energy,
+              82 (2015) 142-150.
+
+ - Compiled Jun 13 2017 15:11:28
+
+ - MPI Parallel calculation mode available
+
+ - OpenMP Parallel calculation mode available
+
+ - Geometry and mesh plotting available
+
+ - Default data path set to: "/opt/serpent/xsdata"
+
+Begin calculation on Sun Jul  2 14:41:38 2017
+
+Reading input file "msreU.serp"...
+Reading input file "../unitCell.serp"...
+Reading input file "../materials.serp"...
+Reading input file "../gentryGroups.serp"...
+
+Re-configuring model for coefficient calculation...
+
+***** Sun Jul  2 14:41:38 2017:
+
+ - MPI task         = 0
+ - OpenMP thread    = 0
+ - RNG parent seed  = 1499020898
+
+Fatal error in function InvokeBranch:
+
+S(a,b) library grmod is not defined
+
+Simulation aborted.
+
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[7417,1],0]
+  Exit code:    255
+--------------------------------------------------------------------------

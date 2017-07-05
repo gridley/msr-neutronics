@@ -1,0 +1,100 @@
+--------------------------------------------------------------------------
+[[33279,1],4]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: node0
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+
+  _                   .-=-.           .-=-.          .-==-.       
+ { }      __        .' O o '.       .' O o '.       /  -<' )--<   
+ { }    .' O'.     / o .-. O \     / o .-. O \     /  .---`       
+ { }   / .-. o\   /O  /   \  o\   /O  /   \  o\   /O /            
+  \ `-` /   \ O`-'o  /     \  O`-'o  /     \  O`-`o /             
+   `-.-`     '.____.'       `._____.'       `.____.'              
+
+Serpent 2 beta
+
+A Continuous-energy Monte Carlo Reactor Physics Burnup Calculation Code
+
+ - Version 2.1.29 (June 12, 2017) -- Contact: serpent@vtt.fi
+
+ - Reference: J. Leppanen, et al. "The Serpent Monte Carlo code: Status,
+              development and applications in 2013." Ann. Nucl. Energy,
+              82 (2015) 142-150.
+
+ - Compiled Jun 13 2017 15:11:28
+
+ - MPI Parallel calculation mode available
+
+ - OpenMP Parallel calculation mode available
+
+ - Geometry and mesh plotting available
+
+ - Default data path set to: "/opt/serpent/xsdata"
+
+Begin calculation on Mon Jul  3 18:12:12 2017
+
+Reading input file "msreU.serp"...
+Reading input file "../unitCell.serp"...
+Reading input file "../materials.serp"...
+Reading input file "../gentryGroups.serp"...
+
+Re-configuring model for coefficient calculation...
+OK.
+
+Checking duplicate input definitions...
+OK.
+
+Creating geometry...
+OK.
+
+Counting geometry zones...
+
+
+ ***** Warning: Universe 2 is used at multiple levels (1 and 3)
+
+
+ ***** Warning: Universe 3 is used at multiple levels (1 and 3)
+
+
+ ***** Warning: Universe 4 is used at multiple levels (1 and 2)
+
+The geometry consists of 4 levels:
+
+Level 0 size: max 22 zones
+Level 1 size: max 900 zones
+Level 2 size: max 13 zones
+Level 3 size: max 1 zones
+
+Processing cells...
+OK.
+
+Linking materials to geometry...
+OK.
+
+
+***** Mon Jul  3 18:12:12 2017
+
+Input error in parameter "det" on line 174 in file "msreU.serp":
+
+Total number of bins exceeds maximum
+
+For parameter description, try Serpent Wiki:
+
+http://serpent.vtt.fi/mediawiki/index.php/Input_syntax_manual#det
+
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[33279,1],0]
+  Exit code:    255
+--------------------------------------------------------------------------
