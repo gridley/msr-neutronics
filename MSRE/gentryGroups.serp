@@ -1,5 +1,12 @@
+% B1 calculation
+ene wim 4 wms69
+set fum wim
+
 % option 1
-set nfg 4 7.3000e-7 2.9023e-5 9.1188e-3
+% set nfg 4 7.8000e-7 2.77e-5 9.118e-3
+
+% decent 2 group, i guess?
+set nfg 2 7.8e-7
 
 % option 2
 % set nfg 4 1.8554e-6 2.9023e-5 9.1188e-3

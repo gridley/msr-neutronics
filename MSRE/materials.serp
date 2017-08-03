@@ -20,7 +20,7 @@ mat moder -1.86 rgb 128 128 128 moder grmod 6000
 23000.09c -0.0009
 16000.09c -0.0005
 6000.09c  -99.99852
-therm grmod 922 grj2.18t  grj2.20t
+ therm grmod 922 grj2.18t  grj2.20t
 % ignoring the oxygen b/c low content and XS
 % grj2.16t grj2.18t grj2.20t grj2.22t grj2.24t
 
